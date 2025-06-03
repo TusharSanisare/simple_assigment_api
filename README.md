@@ -52,11 +52,11 @@ prime-check-api/
 
 ### Setup Instructions
 
-1. **Clone or Download the Project**
-   ```
-   git clone https://github.com/TusharSanisare/simple_assigment_api.git
-   cd prime-check-api
-   ```
+**Clone or Download the Project**
+```
+git clone https://github.com/TusharSanisare/simple_assigment_api.git
+cd prime-check-api
+```
    
 **Build the Project**
 ```
@@ -65,17 +65,22 @@ Run the Application
 mvn spring-boot:run
 ```
 
-The app will start at:
-http://localhost:8080
-
-API Usage
-Endpoint
+**The app will start at**
 ```
+http://localhost:8080
+```
+
+**API Usage**
+```
+Endpoint
 GET /api/is-prime?number={your_number}
 ```
+
 **Query Parameter**
+```
 Name	Type	Required	Description
 number	String The number to be checked
+```
 
 **Example Requests**
 ```
@@ -85,21 +90,25 @@ Request	Response
 /api/is-prime?number=abc	"Invalid number format."
 /api/is-prime	"Missing 'number' query parameter."
 ```
+
 **Testing the API**
 ```
 Using Browser
 http://localhost:8080/api/is-prime?number=11
 ```
+
 **Using Postman**
 ```
 Method: GET
 URL: http://localhost:8080/api/is-prime?number=19
 ```
-Click Send
+
+**Click Send**
 ```
 Using Curl
 curl "http://localhost:8080/api/is-prime?number=29"
 ```
+
 **Error Handling**
 Missing parameter: "Missing 'number' query parameter."
 Invalid input (non-numeric): "Invalid number format."
