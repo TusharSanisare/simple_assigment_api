@@ -23,12 +23,12 @@ A simple and clean REST API built using **Java** and **Spring Boot** that checks
 
 ## Project Structure
 ```
-prime-check-api/
+demo/
 ├── src/
 │ └── main/
 │ └── java/
-│ └── com.example.prime/
-│ ├── PrimeCheckApiApplication.java // Entry point
+│ └── com.example.demo/
+│ ├── DemoApplication.java // Entry point
 │ ├── controller/
 │ │ └── PrimeController.java // REST controller
 │ └── service/
